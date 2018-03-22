@@ -1,0 +1,35 @@
+{
+  "name": "function-double",
+  "version": "1.0.0",
+  "description": "Stand-in for a function",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theKashey/function-double.git"
+  },
+  "keywords": [
+    "function",
+    "arity",
+    "descriptor",
+    "length"
+  ],
+  "author": "Anton Korzunov (thekashey@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theKashey/function-double/issues"
+  },
+  "homepage": "https://github.com/theKashey/function-double#readme",
+  "dependencies": {
+    "babel-jest": "^22.4.3",
+    "jest": "^22.4.3",
+    "util-arity": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
