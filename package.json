@@ -1,6 +1,6 @@
 {
   "name": "function-double",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stand-in for a function",
   "main": "lib/index.js",
   "scripts": {
