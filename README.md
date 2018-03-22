@@ -1,6 +1,6 @@
 function-double
 =======
-
+[![CircleCI status](https://img.shields.io/circleci/project/github/theKashey/function-double/master.svg?style=flat-square)](https://circleci.com/gh/theKashey/function-double/tree/master)
 Stands for the real function passing though all the descriptions and properties of the source function.
 
 It is literally impossible to distinguish the real function, and it's double.
