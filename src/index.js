@@ -11,9 +11,7 @@ function safeDefine(target, key, descriptor) {
 function transferProperties(source, target) {
   const keys = Object.getOwnPropertyNames(source);
 
-  for (const key of keys) {
-    safeDefine(target, key, Object.getOwnPropertyDescriptor(source, key))
-  }
+  keys.forEach( key => safeDefine(target, key, Object.getOwnPropertyDescriptor(source, key)))
 }
 
 function double(targetFn, sourceFn, options = {}) {
