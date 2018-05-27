@@ -1,6 +1,6 @@
 function-double
 =======
-[![CircleCI status](https://img.shields.io/circleci/project/github/theKashey/function-double/master.svg?style=flat-square)](https://circleci.com/gh/theKashey/function-double/tree/master)
+[![CircleCI status](https://img.shields.io/circleci/project/github/theKashey/function-double/master.svg?style=flat-square)](https://circleci.com/gh/theKashey/function-double/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/theKashey/function-double.svg)](https://greenkeeper.io/)
 
 
 Stands for the real function passing though all the descriptions and properties of the source function.
