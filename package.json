@@ -1,8 +1,9 @@
 {
   "name": "function-double",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Stand-in for a function",
   "main": "lib/index.js",
+  "types": "function-double.d.ts",
   "scripts": {
     "test": "jest",
     "build": "babel src -d lib",

@@ -39,6 +39,20 @@ describe('double', () => {
     )
   });
 
+  it('should override toString and name using strings', () => {
+    const secretFunction = (a, b) => a + b;
+    const wrapperFunction = (a, b) => a + b;
+
+    const result = double(wrapperFunction, secretFunction, {
+      name: 'secretFunction`s double',
+      toString: origin => 'doubled-code'
+    });
+
+    expect(result.name).toBe('secretFunction`s double');
+    expect(String(result)).toBe('doubled-code')
+  });
+
+
   it('should handle IE11 case', () => {
     const secretFunction = (a, b) => a + b;
     const wrapperFunction = () => {};

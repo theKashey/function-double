@@ -11,7 +11,7 @@ function safeDefine(target, key, descriptor) {
 function transferProperties(source, target) {
   const keys = Object.getOwnPropertyNames(source);
 
-  keys.forEach( key => safeDefine(target, key, Object.getOwnPropertyDescriptor(source, key)))
+  keys.forEach(key => safeDefine(target, key, Object.getOwnPropertyDescriptor(source, key)))
 }
 
 function double(targetFn, sourceFn, options = {}) {
@@ -30,7 +30,7 @@ function double(targetFn, sourceFn, options = {}) {
       writable: false,
       enumerable: false,
       value: function toString() {
-        return options.toString(sourceFn)
+        return typeof options.toString === 'function' ? options.toString(sourceFn) : options.toString
       },
     });
   } else {
@@ -49,7 +49,7 @@ function double(targetFn, sourceFn, options = {}) {
       configurable: true,
       writable: false,
       enumerable: false,
-      value: options.name(sourceFn)
+      value: typeof options.name === 'function' ? options.name(sourceFn) : options.name
     })
   }
 
